@@ -11,7 +11,7 @@
     "build": "webpack --config webpack.config.js --mode production",
     "build:dev": "webpack --config webpack.config.js --mode development",
     "build:types": "tsc -t es6 -d --module commonjs --outDir ./types src/index.ts && rm ./types/*.js",
-    "build:docs": "typedoc -out ./docs --mode file src/index.ts",
+    "build:docs": "typedoc -out ./docs --mode file --readme README.md src/index.ts",
     "clean": "rm -rf docs/* && rm -f build/*"
   },
   "devDependencies": {

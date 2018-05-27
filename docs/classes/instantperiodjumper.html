@@ -66,18 +66,19 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>InstantJumper that makes use of Periods to jump instants.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
 						<span class="target">InstantPeriodJumper</span>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implements</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/instantjumper.html" class="tsd-signature-type">InstantJumper</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -100,8 +101,15 @@
 						<section class="tsd-index-section tsd-is-external">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="instantperiodjumper.html#days" class="tsd-kind-icon">days</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="instantperiodjumper.html#earlier" class="tsd-kind-icon">earlier</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="instantperiodjumper.html#hours" class="tsd-kind-icon">hours</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="instantperiodjumper.html#later" class="tsd-kind-icon">later</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="instantperiodjumper.html#minutes" class="tsd-kind-icon">minutes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="instantperiodjumper.html#months" class="tsd-kind-icon">months</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="instantperiodjumper.html#seconds" class="tsd-kind-icon">seconds</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="instantperiodjumper.html#weeks" class="tsd-kind-icon">weeks</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="instantperiodjumper.html#years" class="tsd-kind-icon">years</a></li>
 							</ul>
 						</section>
 					</div>
@@ -119,16 +127,28 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in instant-jumper.ts:17</li>
+									<li>Defined in instant-period-jumper.ts:16</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>instant: <a href="instant.html" class="tsd-signature-type">Instant</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>the starting instant</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>period: <a href="period.html" class="tsd-signature-type">Period</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>the amount of time that has to be jumped</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="instantperiodjumper.html" class="tsd-signature-type">InstantPeriodJumper</a></h4>
@@ -144,7 +164,7 @@
 					<div class="tsd-signature tsd-kind-icon">instant<span class="tsd-signature-symbol">:</span> <a href="instant.html" class="tsd-signature-type">Instant</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in instant-jumper.ts:16</li>
+							<li>Defined in instant-period-jumper.ts:15</li>
 						</ul>
 					</aside>
 				</section>
@@ -154,13 +174,41 @@
 					<div class="tsd-signature tsd-kind-icon">period<span class="tsd-signature-symbol">:</span> <a href="period.html" class="tsd-signature-type">Period</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in instant-jumper.ts:17</li>
+							<li>Defined in instant-period-jumper.ts:16</li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="days" class="tsd-anchor"></a>
+					<h3>days</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">days<span class="tsd-signature-symbol">(</span>amount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="instantperiodjumper.html" class="tsd-signature-type">InstantPeriodJumper</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in instant-period-jumper.ts:68</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Extend/Reduce the jump by <amount> days</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>amount: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="instantperiodjumper.html" class="tsd-signature-type">InstantPeriodJumper</a></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
 					<a name="earlier" class="tsd-anchor"></a>
 					<h3>earlier</h3>
@@ -170,12 +218,44 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/instantjumper.html">InstantJumper</a>.<a href="../interfaces/instantjumper.html#earlier">earlier</a></p>
 								<ul>
-									<li>Defined in instant-jumper.ts:24</li>
+									<li>Defined in instant-period-jumper.ts:30</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create an instant jumping backwards in time</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="instant.html" class="tsd-signature-type">Instant</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="hours" class="tsd-anchor"></a>
+					<h3>hours</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">hours<span class="tsd-signature-symbol">(</span>amount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="instantperiodjumper.html" class="tsd-signature-type">InstantPeriodJumper</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in instant-period-jumper.ts:60</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Extend/Reduce the jump by <amount> hours</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>amount: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="instantperiodjumper.html" class="tsd-signature-type">InstantPeriodJumper</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -188,12 +268,156 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/instantjumper.html">InstantJumper</a>.<a href="../interfaces/instantjumper.html#later">later</a></p>
 								<ul>
-									<li>Defined in instant-jumper.ts:28</li>
+									<li>Defined in instant-period-jumper.ts:37</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create an instant jumping forward in time</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="instant.html" class="tsd-signature-type">Instant</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="minutes" class="tsd-anchor"></a>
+					<h3>minutes</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">minutes<span class="tsd-signature-symbol">(</span>amount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="instantperiodjumper.html" class="tsd-signature-type">InstantPeriodJumper</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in instant-period-jumper.ts:52</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Extend/Reduce the jump by <amount> minutes</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>amount: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="instantperiodjumper.html" class="tsd-signature-type">InstantPeriodJumper</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="months" class="tsd-anchor"></a>
+					<h3>months</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">months<span class="tsd-signature-symbol">(</span>amount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="instantperiodjumper.html" class="tsd-signature-type">InstantPeriodJumper</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in instant-period-jumper.ts:84</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Extend/Reduce the jump by <amount> months</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>amount: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="instantperiodjumper.html" class="tsd-signature-type">InstantPeriodJumper</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="seconds" class="tsd-anchor"></a>
+					<h3>seconds</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">seconds<span class="tsd-signature-symbol">(</span>amount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="instantperiodjumper.html" class="tsd-signature-type">InstantPeriodJumper</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in instant-period-jumper.ts:44</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Extend/Reduce the jump be <amount> seconds</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>amount: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="instantperiodjumper.html" class="tsd-signature-type">InstantPeriodJumper</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="weeks" class="tsd-anchor"></a>
+					<h3>weeks</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">weeks<span class="tsd-signature-symbol">(</span>amount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="instantperiodjumper.html" class="tsd-signature-type">InstantPeriodJumper</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in instant-period-jumper.ts:76</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Extend/Reduce the jump by <amount> weeks</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>amount: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="instantperiodjumper.html" class="tsd-signature-type">InstantPeriodJumper</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="years" class="tsd-anchor"></a>
+					<h3>years</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">years<span class="tsd-signature-symbol">(</span>amount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="instantperiodjumper.html" class="tsd-signature-type">InstantPeriodJumper</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in instant-period-jumper.ts:92</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Extend/Reduce the jump by <amount> years</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>amount: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="instantperiodjumper.html" class="tsd-signature-type">InstantPeriodJumper</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -227,10 +451,31 @@
 								<a href="instantperiodjumper.html#period" class="tsd-kind-icon">period</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="instantperiodjumper.html#days" class="tsd-kind-icon">days</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
 								<a href="instantperiodjumper.html#earlier" class="tsd-kind-icon">earlier</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="instantperiodjumper.html#hours" class="tsd-kind-icon">hours</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
 								<a href="instantperiodjumper.html#later" class="tsd-kind-icon">later</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="instantperiodjumper.html#minutes" class="tsd-kind-icon">minutes</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="instantperiodjumper.html#months" class="tsd-kind-icon">months</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="instantperiodjumper.html#seconds" class="tsd-kind-icon">seconds</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="instantperiodjumper.html#weeks" class="tsd-kind-icon">weeks</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="instantperiodjumper.html#years" class="tsd-kind-icon">years</a>
 							</li>
 						</ul>
 					</li>
@@ -241,9 +486,6 @@
 					</li>
 					<li class=" tsd-kind-class tsd-is-external">
 						<a href="timezone.html" class="tsd-kind-icon">Timezone</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-is-external">
-						<a href="../interfaces/instantjumper.html" class="tsd-kind-icon">Instant<wbr>Jumper</a>
 					</li>
 				</ul>
 			</nav>

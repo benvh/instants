@@ -5,16 +5,48 @@ import { Period } from './period';
 
 export class Timezone {
 
-    private utcOffset: Period;
-
+    /**
+     * Coordinate Universal Time
+     */
     public static readonly UTC = new Timezone(0);
+
+    /**
+     * Pacific Standard Time (North America)
+     */
     public static readonly PST = new Timezone(-8);
+
+    /**
+     * Pacific Dayligt Time (North America)
+     */
     public static readonly PDT = new Timezone(-7);
+
+    /**
+     * Central Standard Time (North America)
+     */
     public static readonly CST = new Timezone(-6)
+
+    /**
+     * Eastern Standard Time (North America)
+     */
     public static readonly EST = new Timezone(-5);
+
+    /**
+     * Eastern Daylight time (North America)
+     */
     public static readonly EDT = new Timezone(-4);
+    
+    /**
+     * Central European time
+     */
     public static readonly CET = new Timezone(1);
+
+    /**
+     * Central European Summer Time
+     */
     public static readonly CEST = new Timezone(2);
+
+
+    private utcOffset: Period;
 
     /**
      * @param {number} utcOffset offset relative to utc *in hours*
@@ -23,6 +55,9 @@ export class Timezone {
         this.utcOffset = Period.Hour.multiply(utcOffset);
     }
 
+    /**
+     * Creates a copy of the given instant and set its timezone to this one
+     */
     applyTo(instant: Instant): Instant {
         const newInstant = new Instant(instant.timestamp, instant.timezone);
         newInstant.timezone = this;
@@ -65,19 +100,13 @@ export class Timezone {
         return str;
     }
 
+    /**
+     * Gets the local timezone
+     */
     static local(): Timezone {
         const offset = Period.Minute.multiply(-(new Date()).getTimezoneOffset());
         return new Timezone(offset.hours);
     }
 }
 
-
-// some default timezones...
-//export const UTC = new Timezone(0);
-//export const PST = new Timezone(-8);
-//export const PDT = new Timezone(-7);
-//export const CST = new Timezone(-6)
-//export const EST = new Timezone(-5);
-//export const EDT = new Timezone(-4);
-//export const CET = new Timezone(1);
-//export const CEST = new Timezone(2);
+export default Timezone;

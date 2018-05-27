@@ -65,17 +65,45 @@
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
 				<h1 id="intants">Intants</h1>
-				<p>Human friendly dates.</p>
+				<p>Human friendly dates</p>
+				<h2 id="usage">Usage</h2>
+				<p><del>Use your favorite node package manager; e.g. yarn, to install</del></p>
+				<pre><code class="lang-sh"><span class="hljs-comment"># don't bother, package isn't published yet... :(</span>
+$ yarn add instants --dev
+</code></pre>
+				<h2 id="api-docs">Api docs</h2>
+				<p><a href="https://benvh.tech/instants">https://benvh.tech/instants</a></p>
+				<h2 id="example">Example</h2>
 				<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> { Instant, Timezone } <span class="hljs-keyword">from</span> <span class="hljs-string">'instants'</span>;
 
+<span class="hljs-comment">// instants are like date objects</span>
 <span class="hljs-keyword">const</span> now = <span class="hljs-keyword">new</span> Instant();
+
+<span class="hljs-comment">// instants can be jumper forward/backward in time</span>
 <span class="hljs-keyword">const</span> tomorrow = now.days(<span class="hljs-number">1</span>).later();
 <span class="hljs-keyword">const</span> yesterday = now.days(<span class="hljs-number">1</span>).earlier();
-<span class="hljs-keyword">const</span> nextWeek = now.days(<span class="hljs-number">7</span>).later();
+<span class="hljs-keyword">const</span> nextWeek = now.weeks(<span class="hljs-number">1</span>).later();
 
+<span class="hljs-comment">// jumping can be chained</span>
+<span class="hljs-keyword">const</span> fiveHoursThreeMinutesAndTwentySecondsAgo = now.hours(<span class="hljs-number">5</span>).minutes(<span class="hljs-number">3</span>).seconds(<span class="hljs-number">20</span>).earlier();
+
+<span class="hljs-comment">// or whatever</span>
+<span class="hljs-keyword">const</span> someMomentInTime = now.years(<span class="hljs-number">20</span>).earlier().hours(<span class="hljs-number">5</span>).minutes(<span class="hljs-number">10</span>).later().days(<span class="hljs-number">10</span>).earlier();
+
+<span class="hljs-comment">// Timezones manipulate the time that is diplayed by an Instant.</span>
+<span class="hljs-comment">// By default the local timezone is applied.</span>
+<span class="hljs-keyword">const</span> localTimezone = Timezone.local();
+
+<span class="hljs-comment">// Modify the timezone property where needed</span>
+yesterday.timezone = Timezone.CEST;
+
+<span class="hljs-comment">// Or use a Timezone to create Instants with the Timezone applied.</span>
 <span class="hljs-keyword">const</span> nowUTC = Timezone.UTC.applyTo(now);
 <span class="hljs-keyword">const</span> nowPST = Timezone.PST.applyTo(now);
 <span class="hljs-keyword">const</span> nowPDT = Timezone.PDT.applyTo(now);
+
+<span class="hljs-comment">// You can also create your own "timezones". They're simply offsets...</span>
+yesterday.timezone = <span class="hljs-keyword">new</span> Timezone(<span class="hljs-number">-4.75</span>);
 </code></pre>
 			</div>
 		</div>
@@ -100,9 +128,6 @@
 					</li>
 					<li class=" tsd-kind-class tsd-is-external">
 						<a href="classes/timezone.html" class="tsd-kind-icon">Timezone</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-is-external">
-						<a href="interfaces/instantjumper.html" class="tsd-kind-icon">Instant<wbr>Jumper</a>
 					</li>
 				</ul>
 			</nav>

@@ -5,12 +5,14 @@ export * from './period';
 export * from './timezone';
 
 import Instant from './instant';
+import InstantPeriodJumper from './instant-period-jumper';
 import Period from './period';
-import * as Timezones from './timezone';
+import Timezone from './timezone';
 
 module.exports = {
     Instant,
     Period,
-    Timezones
+    InstantPeriodJumper,
+    Timezone
 };
 
