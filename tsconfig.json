@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "outDir": "./build",
+
+        "module": "node",
+        "target": "es5",
+        "lib": ["es5", "es6", "dom"],
+
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "allowJs": false,
+        "alwaysStrict": true,
+        "experimentalDecorators": true
+    },
+    "files": [
+        "index.ts"
+    ]
+}
