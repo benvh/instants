@@ -3,9 +3,8 @@
 Human friendly dates
 
 ## Usage
-~~Use your favorite node package manager; e.g. yarn, to install~~
+Use your favorite node package manager; e.g. yarn, to install
 ```sh
-# don't bother, package isn't published yet... :(
 $ yarn add instants --dev
 ```
 
