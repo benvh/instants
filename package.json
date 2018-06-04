@@ -1,27 +1,32 @@
 {
-  "name": "instants",
-  "version": "1.0.0",
-  "description": "human friendly dates",
+    "name": "instants",
+    "version": "1.0.0",
+    "description": "human friendly dates",
+    "author": "benvh",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/benvh/instants"
+    },
 
-  "main": "build/instants.min.js",
-  "types": "types/index.d.ts",
+    "main": "build/instants.min.js",
+    "types": "types/index.d.ts",
 
-  "license": "GPL-3.0",
-  "scripts": {
-    "build": "webpack --config webpack.config.js --mode production",
-    "build:dev": "webpack --config webpack.config.js --mode development",
-    "build:types": "tsc -t es6 -d --module commonjs --outDir ./types src/index.ts && rm ./types/*.js",
-    "build:docs": "typedoc -out ./docs --mode file --readme README.md src/index.ts",
-    "clean": "rm -rf docs/* && rm -f build/*"
-  },
-  "devDependencies": {
-    "awesome-typescript-loader": "^5.0.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
-    "typedoc": "^0.11.1",
-    "typescript": "^2.8.3",
-    "webpack": "^4.9.1",
-    "webpack-cli": "^2.1.4"
-  },
-  "dependencies": {}
+    "license": "GPL-3.0",
+    "scripts": {
+        "build": "webpack --config webpack.config.js --mode production",
+        "build:dev": "webpack --config webpack.config.js --mode development",
+        "build:types": "tsc -t es6 -d --module commonjs --outDir ./types src/index.ts && rm ./types/*.js",
+        "build:docs": "typedoc -out ./docs --mode file --readme README.md src/index.ts",
+        "clean": "rm -rf docs/* && rm -f build/*"
+    },
+    "devDependencies": {
+        "awesome-typescript-loader": "^5.0.0",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.4",
+        "typedoc": "^0.11.1",
+        "typescript": "^2.8.3",
+        "webpack": "^4.9.1",
+        "webpack-cli": "^2.1.4"
+    },
+    "dependencies": {}
 }
