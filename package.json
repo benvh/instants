@@ -1,12 +1,12 @@
 {
   "name": "instants",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "human friendly dates",
 
   "main": "build/instants.min.js",
   "types": "types/index.d.ts",
 
-  "license": "GPL3",
+  "license": "GPL-3.0",
   "scripts": {
     "build": "webpack --config webpack.config.js --mode production",
     "build:dev": "webpack --config webpack.config.js --mode development",
