@@ -9,8 +9,15 @@ Human friendly dates
 $ yarn add instants --dev
 ```
 
+Or simply download `instants.min.js` and include into your web project yourself. The library exposes itself as the `Instants` property on `window`.
+
 ## Api docs
 [https://benvh.tech/instants](https://benvh.tech/instants)
+
+## Typescript
+
+Typescript definition files can be found in the `types` folder.
+
 
 ## Example 
 ```javascript
@@ -37,7 +44,7 @@ const localTimezone = Timezone.local();
 // Modify the timezone property where needed
 yesterday.timezone = Timezone.CEST;
 
-// Or use a Timezone to create Instants with the Timezone applied.
+// Or use a Timezone to create Instants with that Timezone applied.
 const nowUTC = Timezone.UTC.applyTo(now);
 const nowPST = Timezone.PST.applyTo(now);
 const nowPDT = Timezone.PDT.applyTo(now);
